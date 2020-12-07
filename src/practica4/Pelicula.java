@@ -1,21 +1,18 @@
 /*
  * INSTITUTO POLITECNICO NACIONAL
  * ESCUELA SUPERIOR DE COMPUTO
- * Materia: [MATERIA]
- * Grupo: [GRUPO]
- * Profesor: [Profesor]
+ * Materia: POO
+ * Grupo: 2CV3
+ * Profesor: Miguel Angel Rodriguez Castillo
  * Alumno(s): Santiago Apreza Robin Miguel
- * [Uso y proposito de la clase]
+ *              Gustavo Lopez Gonzalez
+ * Clase Pelicula para controlar duracion horario, director y precio
  */
 
 package practica4;
 
 import java.util.Date;
 
-/**
- *
- * @author Santiago Apreza Robin Miguel
- */
 public class Pelicula extends Cine {
     protected int duracion;
     protected String horario;
@@ -42,7 +39,10 @@ public class Pelicula extends Cine {
                     + "duracion: " + String.valueOf(duracion) + " minutos \n"
                     + "horario: " + this.horario + "\n"
                     + "director: " + this.director + "\n"
-                    + "precio: $"+this.precio+ "\n";
+                    + "precio: $"+this.precio+ "\n"
+                    + "entradas disponibles: "+ String.valueOf(this.entradas)
+                        + "\n";
+                            
         }
     /**
      * Nombre,

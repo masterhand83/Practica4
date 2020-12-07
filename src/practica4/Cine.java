@@ -1,30 +1,32 @@
 /*
  * INSTITUTO POLITECNICO NACIONAL
  * ESCUELA SUPERIOR DE COMPUTO
- * Materia: [MATERIA]
- * Grupo: [GRUPO]
- * Profesor: [Profesor]
+ * Materia: POO
+ * Grupo: 2CV3
+ * Profesor: Miguel Angel Rodriguez Castillo
  * Alumno(s): Santiago Apreza Robin Miguel
- * [Uso y proposito de la clase]
+ *              Gustavo Lopez Gonzalez
+ * Clase Cine
  */
 
 package practica4;
 
-/**
- *
- * @author Santiago Apreza Robin Miguel
- */
 public class Cine {
     protected String nombre;
     private String ubicacion;
-    
+    protected int entradas;
     public Cine(String nombre, String ubicacion){
         this.nombre = nombre;
         this.ubicacion = ubicacion;
+        this.entradas = 10;
     }
     
-    public void venderEntrada(int cantidad){
-        
+    public int venderEntrada(int cantidad){
+        if (cantidad > entradas){
+            return 0;
+        }
+        entradas -= cantidad;
+        return entradas;
     }
     
     /**
@@ -34,7 +36,7 @@ public class Cine {
     public void imprimirDatos(){
         System.out.println("nombre: "+ nombre);
         System.out.println("ubicacion: " + ubicacion);
-        System.out.println("");
+        System.out.println("entradas" + String.valueOf(entradas));
     }
 
     public String getNombre() {

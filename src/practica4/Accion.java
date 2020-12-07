@@ -1,21 +1,17 @@
 /*
  * INSTITUTO POLITECNICO NACIONAL
  * ESCUELA SUPERIOR DE COMPUTO
- * Materia: [MATERIA]
- * Grupo: [GRUPO]
- * Profesor: [Profesor]
+ * Materia: POO
+ * Grupo: 2CV3
+ * Profesor: Miguel Angel Rodriguez Castillo
  * Alumno(s): Santiago Apreza Robin Miguel
- * [Uso y proposito de la clase]
+ *              Gustavo Lopez Gonzalez
+ * Clase Accion
  */
 
 package practica4;
 
 import java.util.Date;
-
-/**
- *
- * @author Santiago Apreza Robin Miguel
- */
 public class Accion extends Pelicula {
     private int numPersecuciones;
     private int numEnfrentamientos;
