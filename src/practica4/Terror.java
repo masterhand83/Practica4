@@ -19,10 +19,39 @@ import java.util.Date;
 public class Terror extends Pelicula {
     private String personajeTerror;
     private double nivelMiedo;
-    public Terror(String nombre) {
-        super(nombre);
+    public Terror(
+            String nombre, 
+            String horario, 
+            String director, 
+            double precio,
+            String personajeTerror,
+            double nivelMiedo,
+            int duracion){
+        super(nombre, horario, director, precio, duracion);
+        this.personajeTerror = personajeTerror;
+        this.nivelMiedo = nivelMiedo;
     }
-    public Terror(String nombre, Date duracion, Date horario){
-        super(nombre, duracion);
+
+    public String getPersonajeTerror() {
+        return personajeTerror;
     }
+
+    public void setPersonajeTerror(String personajeTerror) {
+        this.personajeTerror = personajeTerror;
+    }
+
+    public double getNivelMiedo() {
+        return nivelMiedo;
+    }
+
+    public void setNivelMiedo(double nivelMiedo) {
+        this.nivelMiedo = nivelMiedo;
+    }
+    public String toString(){
+        return super.toString()
+                + "Personaje de Terror: " + personajeTerror+ "\n"
+                + "nivel de miedo: " + String.valueOf(nivelMiedo) + "\n";
+    }
+    
+    
 }
